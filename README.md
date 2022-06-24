@@ -15,3 +15,7 @@ https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/921/imagem_logo.png
 <pre>
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 </pre>
+
+## Exemplo da Interface - **Home**
+
+<img src="https://github.com/rodolfosantos23/ifome-delivery/blob/main/src/img/gif/gif_home_01.gif" width="500" />
