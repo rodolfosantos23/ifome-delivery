@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>I-Fome</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header
+        class="flex items-center w-full h-20 m-h-20 py-2 px-2 bg-white border-solid border-b-2 border-x-stone-500  lg:px-10">
+
+        <!-- Menu Mobile -->
+        <div class="flex flex-initial items-center justify-between md:w-auto md:hidden">
+            <a href="#"
+                class="text-amber-700 hover:text-amber-500 mx-2 text-sm font-medium transition-all duration-200 flex">
+                <i data-feather="menu" class="text-amber-700 hover:text-amber-500"></i>
+            </a>
+        </div>
+
+        <!-- Header: Logo/Menu Web -->
+        <div class="flex w-auto">
+            <!-- Logo -->
+            <span class="w-16 sm:w-20 flex-none p-2 mr-0 xl:mr-5">
+                <img src="https://cdn.neemo.com.br/uploads/settings_webdelivery/logo/921/imagem_logo.png" alt="Logo">
+            </span>
+
+            <!-- Menu Web -->
+            <div class="hidden flex-initial items-center justify-between w-full md:w-auto xl:flex">
+                <a href="#"
+                    class="text-amber-700 hover:text-amber-500 mx-2 text-sm font-medium transition-all duration-200">Restaurantes</a>
+                <a href="#"
+                    class="text-amber-700 hover:text-amber-500 mx-2 text-sm font-medium transition-all duration-200">Mercado</a>
+                <a href="#"
+                    class="text-amber-700 hover:text-amber-500 mx-2 text-sm font-medium transition-all duration-200">Bebidas</a>
+            </div>
+        </div>
+
+        <!-- Header: Busca -->
+        <div class="flex flex-1 items-center justify-between ml-5 xl:ml-10">
+            <input type="text" placeholder="Busque por produto ou loja"
+                class="rounded px-5 py-2 w-full mr-5 xl:mr-10 bg-slate-100 outline-none">
+        </div>
+
+        <!-- Header: Perfil/Carrinho -->
+        <div class="hidden md:flex flex-initial">
+            <!-- Perfil -->
+            <div class="mr-5 flex">
+                <a href="#" class="flex items-center">
+                    <div class="mr-2 text-zinc-600 font-medium text-sm hidden lg:flex">Avenida Sapopemba, 5500</div>
+                    <div><i data-feather="user" class="text-amber-700"></i></div>
+                </a>
+            </div>
+
+            <!-- Carrinho -->
+            <a href="#" class="flex justify-between items-center">
+                <i data-feather="shopping-bag" class="text-amber-700"></i>
+                <div class="ml-3 text-sm text-zinc-600">
+                    <p class="text-[13px]">3 itens</p>
+                    <p class="font-medium">R$ 190,00</p>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- Container -->
+    <div class="container px-4 mx-auto lg:px-20 py-5">
+
+        <!-- Promoções -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="w-full">
+                <a href="#">
+                    <img src="img/banner/001.png" class="rounded" alt="Promoção 01">
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="#">
+                    <img src="img/banner/002.png" class="rounded" alt="Promoção 02">
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="#">
+                    <img src="img/banner/004.png" class="rounded" alt="Promoção 03">
+                </a>
+            </div>
+            <div class="w-full">
+                <a href="#">
+                    <img src="img/banner/003.png" class="rounded" alt="Promoção 04">
+                </a>
+            </div>
+        </div>
+
+        <!-- Listagem Restaurantes -->
+        <div>
+            <div class="mt-8 w-full">
+                <h2 class="font-bold text-xl text-zinc-700">Restaurantes</h3>
+            </div>
+
+            <div class="mt-8 w-full">
+                <!-- Lista  -->
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                    <!-- Restaurantes -->
+                    <a href="#" class="p-4 flex justify-between rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-24 flex-initial">
+                            <img src="img/restaurantes/001.png" alt="Faustino Restaurante" class="rounded-xl">
+                        </div>
+                        <div class="flex flex-col flex-1 ml-5 pt-2 overflow-hidden">
+                            <p class="font-medium text-md text-zinc-800">Faustino Restaurante</p>
+                            <span class="flex flex-row text-sm">
+                                <i data-feather="star" class="text-yellow-500 w-4"></i>
+                                <small class="text-yellow-500 font-bold mt-[2px] ml-1">4,8</small>
+                                <small class="ml-2 mt-[1px] font-light text-sm"> • Saudável • 5.0 km</small>
+                            </span>
+                            <p class="mt-2 font-light text-sm">30-40 min • R$9,90</p>
+                        </div>
+                    </a>
+                    <a href="#" class="p-4 flex justify-between rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-24 flex-initial">
+                            <img src="img/restaurantes/002.png" alt="Sushi Mania" class="rounded-xl">
+                        </div>
+                        <div class="flex flex-col flex-1 ml-5 pt-2 overflow-hidden">
+                            <p class="font-medium text-md text-zinc-800">Sushi Mania</p>
+                            <span class="flex flex-row text-sm">
+                                <i data-feather="star" class="text-yellow-500 w-4"></i>
+                                <small class="text-yellow-500 font-bold mt-[2px] ml-1">4,1</small>
+                                <small class="ml-2 mt-[1px] font-light text-sm"> • Japonesa • 3.0 km</small>
+                            </span>
+                            <p class="mt-2 font-light text-sm">15-20 min • R$4,90</p>
+                        </div>
+                    </a>
+                    <a href="#" class="p-4 flex justify-between rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-24 flex-initial">
+                            <img src="img/restaurantes/003.png" alt="Bocelle Restaurante" class="rounded-xl">
+                        </div>
+                        <div class="flex flex-col flex-1 ml-5 pt-2 overflow-hidden">
+                            <p class="font-medium text-md text-zinc-800">Bocelle Restaurante</p>
+                            <span class="flex flex-row text-sm">
+                                <i data-feather="star" class="text-yellow-500 w-4"></i>
+                                <small class="text-yellow-500 font-bold mt-[2px] ml-1">4,9</small>
+                                <small class="ml-2 mt-[1px] font-light text-sm"> • Italiana • 1.8 km</small>
+                            </span>
+                            <p class="mt-2 font-light text-sm">10-20 min • R$3,90</p>
+                        </div>
+                    </a>
+                    <a href="#" class="p-4 flex justify-between rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-24 flex-initial">
+                            <img src="img/restaurantes/004.png" alt="Lira e Cia" class="rounded-xl">
+                        </div>
+                        <div class="flex flex-col flex-1 ml-5 pt-2 overflow-hidden">
+                            <p class="font-medium text-md text-zinc-800">Lira e Cia</p>
+                            <span class="flex flex-row text-sm">
+                                <i data-feather="star" class="text-yellow-500 w-4"></i>
+                                <small class="text-yellow-500 font-bold mt-[2px] ml-1">4,2</small>
+                                <small class="ml-2 mt-[1px] font-light text-sm"> • Natural • 2.4 km</small>
+                            </span>
+                            <p class="mt-2 font-light text-sm">15-25 min • R$6,90</p>
+                        </div>
+                    </a>
+                    <a href="#" class="p-4 flex justify-between rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-24 flex-initial">
+                            <img src="img/restaurantes/005.png" alt="Aurora Tapiocaria" class="rounded-xl">
+                        </div>
+                        <div class="flex flex-col flex-1 ml-5 pt-2 overflow-hidden">
+                            <p class="font-medium text-md text-zinc-800">Aurora Tapiocaria</p>
+                            <span class="flex flex-row text-sm">
+                                <i data-feather="star" class="text-yellow-500 w-4"></i>
+                                <small class="text-yellow-500 font-bold mt-[2px] ml-1">5,0</small>
+                                <small class="ml-2 mt-[1px] font-light text-sm"> • Brasileira • 3.5 km</small>
+                            </span>
+                            <p class="mt-2 font-light text-sm">15-25 min • R$8,00</p>
+                        </div>
+                    </a>
+                    <a href="#" class="p-4 flex justify-between rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-24 flex-initial">
+                            <img src="img/restaurantes/006.png" alt="Churrasco e Cerveja" class="rounded-xl">
+                        </div>
+                        <div class="flex flex-col flex-1 ml-5 pt-2 overflow-hidden">
+                            <p class="font-medium text-md text-zinc-800">Churrasco e Cerveja</p>
+                            <span class="flex flex-row text-sm">
+                                <i data-feather="star" class="text-yellow-500 w-4"></i>
+                                <small class="text-yellow-500 font-bold mt-[2px] ml-1">4,6</small>
+                                <small class="ml-2 mt-[1px] font-light text-sm"> • Churrascaria • 2.4 km</small>
+                            </span>
+                            <p class="mt-2 font-light text-sm">15-25 min • R$6,00</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- /Lista -->
+        </div>
+
+
+        <!-- Listagem Mercado -->
+        <div>
+            <div class="mt-8 w-full">
+                <h2 class="font-bold text-xl text-zinc-700">Mercados</h3>
+            </div>
+
+            <div class="mt-8 w-full">
+                <!-- Lista  -->
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                    <!-- Restaurantes -->
+                    <a href="#" class="p-4 flex justify-between rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-24 flex-initial">
+                            <img src="img/mercados/001.png" alt="Orgânico Mercearia" class="rounded-xl">
+                        </div>
+                        <div class="flex flex-col flex-1 ml-5 pt-2 overflow-hidden">
+                            <p class="font-medium text-md text-zinc-800">Orgânico Mercearia</p>
+                            <span class="flex flex-row text-sm">
+                                <i data-feather="star" class="text-yellow-500 w-4"></i>
+                                <small class="text-yellow-500 font-bold mt-[2px] ml-1">4,3</small>
+                                <small class="ml-2 mt-[1px] font-light text-sm"> • Mercearia • 1.4 km</small>
+                            </span>
+                            <p class="mt-2 font-light text-sm">35-45 min • R$2,90</p>
+                        </div>
+                    </a>
+                    <a href="#" class="p-4 flex justify-between rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-24 flex-initial">
+                            <img src="img/mercados/002.png" alt="Feira Vegana" class="rounded-xl">
+                        </div>
+                        <div class="flex flex-col flex-1 ml-5 pt-2 overflow-hidden">
+                            <p class="font-medium text-md text-zinc-800">Feira Vegana</p>
+                            <span class="flex flex-row text-sm">
+                                <i data-feather="star" class="text-yellow-500 w-4"></i>
+                                <small class="text-yellow-500 font-bold mt-[2px] ml-1">4,1</small>
+                                <small class="ml-2 mt-[1px] font-light text-sm"> • Mercado • 2.6 km</small>
+                            </span>
+                            <p class="mt-2 font-light text-sm">15-20 min • R$3,90</p>
+                        </div>
+                    </a>
+                    <a href="#" class="p-4 flex justify-between rounded-lg hover:shadow-lg transition-all duration-300">
+                        <div class="w-24 flex-initial">
+                            <img src="img/mercados/003.png" alt="Borcelle Vegetais" class="rounded-xl">
+                        </div>
+                        <div class="flex flex-col flex-1 ml-5 pt-2 overflow-hidden">
+                            <p class="font-medium text-md text-zinc-800">Borcelle Vegetais</p>
+                            <span class="flex flex-row text-sm">
+                                <i data-feather="star" class="text-yellow-500 w-4"></i>
+                                <small class="text-yellow-500 font-bold mt-[2px] ml-1">4,4</small>
+                                <small class="ml-2 mt-[1px] font-light text-sm"> • Horti Fruti • 2.9 km</small>
+                            </span>
+                            <p class="mt-2 font-light text-sm">20-35 min • R$4,90</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- /Lista -->
+        </div>
+
+        <!-- /Container -->
+    </div>
+
+    <script>
+        feather.replace()
+    </script>
+</body>
+
+</html>
