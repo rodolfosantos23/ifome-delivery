@@ -19,3 +19,7 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 ## Exemplo da Interface - **Home**
 
 <img src="https://github.com/rodolfosantos23/ifome-delivery/blob/main/src/img/gif/gif_home_01.gif" width="500" />
+
+## Exemplo de responsividade
+
+<img src="https://github.com/rodolfosantos23/ifome-delivery/blob/main/src/img/gif/gif_responsividade_01.gif" width="500" />
